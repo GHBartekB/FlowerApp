@@ -1,4 +1,4 @@
-export const flowerList = [
+export const FlowerList = [
     {
         id: 0,
         name: 'aksamitka',
@@ -51,143 +51,104 @@ export const flowerList = [
         name: 'begonia stale kwitnąca',
         price: 2,
 
-    }, {
+    },
+
+    {
         id: 9,
-        name: 'begonia',
+        name: 'dalia',
         price: 6,
 
-    }, {
+    },
+    {
         id: 10,
-        name: 'begonia',
-        price: 6,
-
-    }, {
-        id: 11,
-        name: 'begonia',
-        price: 6,
-
-    }, {
-        id: 12,
-        name: 'begonia',
-        price: 6,
-
-    }, {
-        id: 13,
-        name: 'begonia',
-        price: 6,
-
-    }, {
-        id: 14,
-        name: 'begonia',
-        price: 6,
-
-    }, {
-        id: 15,
-        name: 'begonia',
-        price: 6,
-
-    },
-    {
-        id: 16,
-        name: 'dalia',
-        price: 6,
-
-    },
-    {
-        id: 17,
-        name: 'dalia',
-        price: 6,
-
-    }, {
-        id: 18,
         name: 'fuksja',
         price: 5,
 
     },
     {
-        id: 19,
+        id: 11,
         name: 'heliotrop',
         price: 6,
 
     }, {
-        id: 20,
+        id: 12,
         name: 'kacanka',
         price: 4,
 
     },
     {
-        id: 21,
+        id: 13,
         name: 'koci ogon',
         price: 6,
 
     },
     {
-        id: 22,
+        id: 14,
         name: 'koci ogon wiszący',
         price: 25,
 
     },
     {
-        id: 23,
+        id: 15,
         name: 'komarzyca',
         price: 4,
 
     },
     {
-        id: 24,
+        id: 16,
         name: 'lewizja',
         price: 6,
 
     },
     {
-        id: 25,
+        id: 17,
         name: 'lobelia',
         price: 5,
 
     },
     {
-        id: 26,
+        id: 18,
         name: 'milion dzwoneczków',
         price: 5,
 
     },
     {
-        id: 27,
+        id: 19,
         name: 'niecierpek',
         price: 5,
 
     },
     {
-        id: 28,
+        id: 20,
         name: 'pelargonia',
         price: 5,
 
     },
     {
-        id: 29,
+        id: 21,
         name: 'pelargonia bordo',
         price: 6,
 
     },
     {
-        id: 30,
+        id: 22,
         name: 'stokrotka afrykańska',
         price: 6,
 
     },
     {
-        id: 31,
+        id: 23,
         name: 'sunvitalia',
         price: 4,
 
     }, {
-        id: 32,
+        id: 24,
         name: 'surfinia',
         price: 4,
 
     },
     {
-        id: 33,
+        id: 25,
         name: 'wilczomlecz',
         price: 5,
 
