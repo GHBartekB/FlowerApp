@@ -1,15 +1,10 @@
 import React from 'react';
 import styles from './Root.module.scss';
-import { FlowerList } from '../../data/FlowerList.js';
+// import { FlowerList } from '../../data/FlowerList.js';
+import TariffView from '../TariffView/TariffView.js';
 
-const product = FlowerList.map(item => (
-  <div className={styles.item}>
-    <span className={styles.item__name}>{item.name}</span>
-    <span className={styles.item__price}>{item.price} zł</span>
-  </div>
-))
 
-class App extends React.Component {
+class Root extends React.Component {
 
   state = {}
 
@@ -29,7 +24,7 @@ class App extends React.Component {
             </nav>
           </aside>
           <main className={styles.main}>
-            {product}
+            <TariffView />
           </main>
         </div>
       </>
@@ -38,4 +33,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default Root;
