@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Root.module.scss';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { FlowerList } from '../../data/FlowerList.js';
 import Nav from '../../components/Nav/Nav.js';
 import TariffView from '../TariffView/TariffView.js';
@@ -19,10 +19,15 @@ class Root extends React.Component {
             <Nav />
           </aside>
           <main className={styles.main}>
-            <TariffView />
+            <Switch>
+              <Route
+                path="/cennik"
+                component={TariffView}
+              />
+            </Switch>
           </main>
         </div>
-      </Router>
+      </Router >
     )
   }
 
