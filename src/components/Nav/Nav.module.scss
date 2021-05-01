@@ -1,18 +1,16 @@
 .nav {
-    height: 350px;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 150px;
     overflow: hidden;
-    border: 2px solid pink;
     padding: 20px 0 30px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
     list-style: none;
-    border: 2px solid white;
     height: 100%;
 
     &__item {
@@ -27,6 +25,10 @@
         text-transform: uppercase;
         padding: 10px 8px;
 
+    }
+
+    &__item:nth-last-child(1) {
+        margin-top: 80px;
     }
 
     &__linkActive {
