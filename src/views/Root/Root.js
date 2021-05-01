@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { FlowerList } from '../../data/FlowerList.js';
 import Nav from '../../components/Nav/Nav.js';
 import TariffView from '../TariffView/TariffView.js';
+import OrderView from '../OrderView/OrderView.js';
 
 
 class Root extends React.Component {
@@ -23,6 +24,10 @@ class Root extends React.Component {
               <Route
                 path="/cennik"
                 component={TariffView}
+              />
+              <Route
+                path="/zamowienia"
+                component={OrderView}
               />
             </Switch>
           </main>
