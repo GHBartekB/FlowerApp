@@ -1,0 +1,33 @@
+.app {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.panel {
+    width: 130px;
+    background-color: royalblue;
+}
+
+.main {
+    border: 2px solid red;
+    flex-grow: 1;
+    height: 100vh;
+    padding: 50px 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 250px;
+    border: 2px solid green;
+    margin-bottom: 10px;
+
+    &__name,
+    &__price {
+        font-size: 18px;
+        color: black;
+    }
+}
