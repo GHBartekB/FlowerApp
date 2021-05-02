@@ -52,6 +52,38 @@ class OrderView extends React.Component {
         }))
     }
 
+    handleResetbtn = () => {
+        this.setState({
+            sum: 0,
+            aks: 0,
+            amp: 0,
+            bak: 0,
+            bakWis: 0,
+            bat: 0,
+            begSta: 0,
+            begDra: 0,
+            begSol: 0,
+            begStaKwi: 0,
+            dal: 0,
+            fuk: 0,
+            hel: 0,
+            kac: 0,
+            kocOgo: 0,
+            kocOgoWis: 0,
+            kom: 0,
+            lew: 0,
+            lob: 0,
+            mil: 0,
+            nie: 0,
+            pel: 0,
+            pelBor: 0,
+            stoAfr: 0,
+            sun: 0,
+            sur: 0,
+            wil: 0,
+        })
+    }
+
     render() {
 
         const productList = FlowerList.map((product) => {
@@ -62,18 +94,19 @@ class OrderView extends React.Component {
                     <span>{product.name}</span>
                     <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btn}>-</button>
                     <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btn}>+</button>
-                    <span>{this.state[product.stateName]}</span>
-                    <span>szt.</span>
+                    <span>{this.state[product.stateName]} szt.</span>
                 </div>
             )
         })
 
         return (
             <>
-                {productList}
                 <div>
                     <h2>Do zapłaty: {this.state.sum} zł</h2>
                 </div>
+                {productList}
+
+                <button onClick={() => this.handleResetbtn()}>Resetuj stan</button>
             </>
         )
     }
