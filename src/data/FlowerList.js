@@ -1,7 +1,7 @@
 export const FlowerList = [
     {
         id: 1,
-        countName: 'aksCount',
+        aksCount: 0,
         name: 'aksamitka',
         price: 2,
         description: '',
@@ -9,54 +9,54 @@ export const FlowerList = [
     },
     {
         id: 2,
-        countName: 'ampCount',
+        ampCount: 0,
         name: 'ampla',
         price: 25,
 
     },
     {
         id: 3,
-        countName: 'bakCount',
+        bakCount: 0,
         name: 'bakopa',
         price: 4,
 
     },
     {
         id: 4,
-        countName: 'bakWCount',
+        bakWCount: 0,
         name: 'bakopa wisząca',
         price: 20,
 
     },
     {
         id: 5,
-        countName: 'batCount',
+        batCount: 0,
         name: 'batat',
         price: 6,
 
     },
     {
         id: 6,
-        countName: 'begStandCount',
+        begStandCount: 0,
         name: 'begonia standard',
         price: 6,
 
     },
     {
         id: 7,
-        countName: 'begDragCount',
+        begDragCount: 0,
         name: 'begonia dragon',
         price: 7,
 
     }, {
         id: 8,
-        countName: 'begSolCount',
+        begSolCount: 0,
         name: 'begonia solewia',
         price: 7,
 
     }, {
         id: 9,
-        countName: 'begStalKwiCount',
+        begStalKwiCount: 0,
         name: 'begonia stale kwitnąca',
         price: 2,
 
@@ -64,117 +64,117 @@ export const FlowerList = [
 
     {
         id: 10,
-        countName: 'dalCount',
+        dalCount: 0,
         name: 'dalia',
         price: 6,
 
     },
     {
         id: 11,
-        countName: 'fukCount',
+        fukCount: 0,
         name: 'fuksja',
         price: 5,
 
     },
     {
         id: 12,
-        countName: 'helCount',
+        helCount: 0,
         name: 'heliotrop',
         price: 6,
 
     }, {
         id: 13,
-        countName: 'kacCount',
+        kacCount: 0,
         name: 'kacanka',
         price: 4,
 
     },
     {
         id: 14,
-        countName: 'kocCount',
+        kocCount: 0,
         name: 'koci ogon',
         price: 6,
 
     },
     {
         id: 15,
-        countName: 'kocWisCount',
+        kocWisCount: 0,
         name: 'koci ogon wiszący',
         price: 25,
 
     },
     {
         id: 16,
-        countName: 'komCount',
+        komCount: 0,
         name: 'komarzyca',
         price: 4,
 
     },
     {
         id: 17,
-        countName: 'lewCount',
+        lewCount: 0,
         name: 'lewizja',
         price: 6,
 
     },
     {
         id: 18,
-        countName: 'lobCount',
+        lobCount: 0,
         name: 'lobelia',
         price: 5,
 
     },
     {
         id: 19,
-        countName: 'milCount',
+        milCount: 0,
         name: 'milion dzwoneczków',
         price: 5,
 
     },
     {
         id: 20,
-        countName: 'niecCount',
+        niecCount: 0,
         name: 'niecierpek',
         price: 5,
 
     },
     {
         id: 21,
-        countName: 'pelCount',
+        pelCount: 0,
         name: 'pelargonia',
         price: 5,
 
     },
     {
         id: 22,
-        countName: 'pelBorCount',
+        pelBorCount: 0,
         name: 'pelargonia bordo',
         price: 6,
 
     },
     {
         id: 23,
-        countName: 'stoCount',
+        stoCount: 0,
         name: 'stokrotka afrykańska',
         price: 6,
 
     },
     {
         id: 24,
-        countName: 'sunCount',
+        sunCount: 0,
         name: 'sunvitalia',
         price: 4,
 
     }, {
         id: 25,
-        countName: 'surfCount',
+        surfCount: 0,
         name: 'surfinia',
         price: 4,
 
     },
     {
         id: 26,
-        countName: 'wilCount',
+        wilCount: 0,
         name: 'wilczomlecz',
         price: 5,
 
