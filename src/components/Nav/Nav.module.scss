@@ -3,9 +3,45 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 150px;
+    width: 1vw;
     overflow: hidden;
+    background-color: royalblue;
     padding: 20px 0 30px;
+}
+
+.burger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    z-index: 2;
+
+    &__spanFirst {
+        position: absolute;
+        top: 37.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    &__spanSecond {
+        @extend .burger__spanFirst;
+        top: 47.5%;
+    }
+
+    &__spanThird {
+
+        @extend .burger__spanFirst;
+        top: 57.5%;
+    }
+
 }
 
 .list {

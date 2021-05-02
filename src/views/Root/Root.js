@@ -15,10 +15,7 @@ class Root extends React.Component {
 
     return (
       <Router>
-
-
         <Nav />
-
         <main className={styles.main}>
           <Switch>
             <Route

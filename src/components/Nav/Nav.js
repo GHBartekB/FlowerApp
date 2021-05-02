@@ -4,46 +4,57 @@ import styles from './Nav.module.scss';
 
 const Nav = () => (
 
-    <nav className={styles.nav}>
-        <ul className={styles.list}>
-            <li className={styles.list__item}>
-                <NavLink
-                    className={styles.list__link}
-                    activeClassName={styles.list__linkActive}
-                    to="/opisy">
+    <>
+        <button className={styles.burger}>
 
-                    Opisy
-                </NavLink>
-            </li>
-            <li className={styles.list__item}>
-                <NavLink
-                    className={styles.list__link}
-                    activeClassName={styles.list__linkActive}
-                    to="/cennik">
+            <span className={styles.burger__spanFirst}></span>
+            <span className={styles.burger__spanSecond}></span>
+            <span className={styles.burger__spanThird}></span>
 
-                    Cennik
-                </NavLink>
-            </li>
-            <li className={styles.list__item}>
-                <NavLink
-                    className={styles.list__link}
-                    activeClassName={styles.list__linkActive}
-                    to="/zamowienia">
+        </button>
 
-                    Zamówienia
-                </NavLink>
-            </li>
-            <li className={styles.list__item}>
-                <NavLink
-                    className={styles.list__link}
-                    activeClassName={styles.list__linkActive}
-                    to="/utarg">
+        <nav className={styles.nav}>
 
-                    Utarg
+            <ul className={styles.list}>
+                <li className={styles.list__item}>
+                    <NavLink
+                        className={styles.list__link}
+                        activeClassName={styles.list__linkActive}
+                        to="/opisy">
+
+                        Opisy
                 </NavLink>
-            </li>
-        </ul>
-    </nav>
+                </li>
+                <li className={styles.list__item}>
+                    <NavLink
+                        className={styles.list__link}
+                        activeClassName={styles.list__linkActive}
+                        to="/cennik">
+
+                        Cennik
+                </NavLink>
+                </li>
+                <li className={styles.list__item}>
+                    <NavLink
+                        className={styles.list__link}
+                        activeClassName={styles.list__linkActive}
+                        to="/zamowienia">
+
+                        Zamówienia
+                </NavLink>
+                </li>
+                <li className={styles.list__item}>
+                    <NavLink
+                        className={styles.list__link}
+                        activeClassName={styles.list__linkActive}
+                        to="/utarg">
+
+                        Utarg
+                </NavLink>
+                </li>
+            </ul>
+        </nav>
+    </>
 
 )
 
