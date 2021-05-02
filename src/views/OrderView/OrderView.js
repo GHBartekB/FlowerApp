@@ -32,8 +32,6 @@ class OrderView extends React.Component {
         sun: 0,
         sur: 0,
         wil: 0,
-
-
     }
 
     handleAddBtn = (price, stateName) => {
@@ -41,7 +39,7 @@ class OrderView extends React.Component {
         this.setState(prevState => (
             {
                 sum: prevState.sum + productPrice,
-                [stateName]: prevState.[stateName] + 1,
+                [stateName]: prevState[stateName] + 1,
 
             }))
     }
@@ -50,7 +48,7 @@ class OrderView extends React.Component {
         const productPrice = parseInt(price);
         this.setState(prevState => ({
             sum: prevState.sum - productPrice,
-            [stateName]: prevState.[stateName] - 1,
+            [stateName]: prevState[stateName] - 1,
         }))
     }
 
@@ -58,17 +56,13 @@ class OrderView extends React.Component {
 
         const productList = FlowerList.map((product) => {
 
-
-
             return (
-
-
 
                 <div key={product.id} className={styles.item}>
                     <span>{product.name}</span>
                     <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btn}>-</button>
                     <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btn}>+</button>
-                    <span>{this.state.[product.stateName]}</span>
+                    <span>{this.state[product.stateName]}</span>
                     <span>szt.</span>
                 </div>
             )
