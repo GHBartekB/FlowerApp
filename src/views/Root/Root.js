@@ -15,23 +15,23 @@ class Root extends React.Component {
 
     return (
       <Router>
-        <div className={styles.app}>
-          <aside className={styles.panel}>
-            <Nav />
-          </aside>
-          <main className={styles.main}>
-            <Switch>
-              <Route
-                path="/cennik"
-                component={TariffView}
-              />
-              <Route
-                path="/zamowienia"
-                component={OrderView}
-              />
-            </Switch>
-          </main>
-        </div>
+
+
+        <Nav />
+
+        <main className={styles.main}>
+          <Switch>
+            <Route
+              path="/cennik"
+              component={TariffView}
+            />
+            <Route
+              path="/zamowienia"
+              component={OrderView}
+            />
+          </Switch>
+        </main>
+
       </Router >
     )
   }
