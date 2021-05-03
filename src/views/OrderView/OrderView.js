@@ -46,10 +46,15 @@ class OrderView extends React.Component {
 
     handleSubstractBtn = (price, stateName) => {
         const productPrice = parseInt(price);
-        this.setState(prevState => ({
-            sum: prevState.sum - productPrice,
-            [stateName]: prevState[stateName] - 1,
-        }))
+
+        if (this.state[stateName] > 0) {
+
+            this.setState(prevState => ({
+                sum: prevState.sum - productPrice,
+                [stateName]: prevState[stateName] - 1,
+            }))
+        }
+
     }
 
     handleResetbtn = () => {
@@ -95,7 +100,7 @@ class OrderView extends React.Component {
                     <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btnMin}>-</button>
                     <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btnAdd}>+</button>
                     <span className={styles.item__count} >{this.state[product.stateName]} szt.</span>
-                </div>
+                </div >
             )
         })
 
@@ -104,7 +109,7 @@ class OrderView extends React.Component {
                 <div>
                     <h2>Do zapłaty: {this.state.sum} zł</h2>
                 </div>
-                {productList}
+                { productList}
 
                 <button className={styles.btnRes} onClick={() => this.handleResetbtn()}>Resetuj stan</button>
             </>
