@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/FlowerApp/static/css/main.40341c11.chunk.css",
+    "main.js": "/FlowerApp/static/js/main.8948624a.chunk.js",
+    "main.js.map": "/FlowerApp/static/js/main.8948624a.chunk.js.map",
+    "runtime-main.js": "/FlowerApp/static/js/runtime-main.2af435a3.js",
+    "runtime-main.js.map": "/FlowerApp/static/js/runtime-main.2af435a3.js.map",
+    "static/js/2.e4fbe94e.chunk.js": "/FlowerApp/static/js/2.e4fbe94e.chunk.js",
+    "static/js/2.e4fbe94e.chunk.js.map": "/FlowerApp/static/js/2.e4fbe94e.chunk.js.map",
+    "index.html": "/FlowerApp/index.html",
+    "static/css/main.40341c11.chunk.css.map": "/FlowerApp/static/css/main.40341c11.chunk.css.map",
+    "static/js/2.e4fbe94e.chunk.js.LICENSE.txt": "/FlowerApp/static/js/2.e4fbe94e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2af435a3.js",
+    "static/js/2.e4fbe94e.chunk.js",
+    "static/css/main.40341c11.chunk.css",
+    "static/js/main.8948624a.chunk.js"
+  ]
+}
