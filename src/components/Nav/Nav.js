@@ -20,7 +20,10 @@ const Nav = ({ isActive, clickBtn }) => (
                     <NavLink
                         className={styles.list__link}
                         activeClassName={styles.list__linkActive}
-                        to="/opisy">
+                        to="/opisy"
+                        onClick={clickBtn}
+                    >
+
 
                         Opisy
                 </NavLink>
@@ -29,7 +32,9 @@ const Nav = ({ isActive, clickBtn }) => (
                     <NavLink
                         className={styles.list__link}
                         activeClassName={styles.list__linkActive}
-                        to="/cennik">
+                        to="/cennik"
+                        onClick={clickBtn}
+                    >
 
                         Cennik
                 </NavLink>
@@ -38,7 +43,9 @@ const Nav = ({ isActive, clickBtn }) => (
                     <NavLink
                         className={styles.list__link}
                         activeClassName={styles.list__linkActive}
-                        to="/zamowienia">
+                        to="/zamowienia"
+                        onClick={clickBtn}
+                    >
 
                         Zamówienia
                 </NavLink>
@@ -47,7 +54,9 @@ const Nav = ({ isActive, clickBtn }) => (
                     <NavLink
                         className={styles.list__link}
                         activeClassName={styles.list__linkActive}
-                        to="/utarg">
+                        to="/utarg"
+                        onClick={clickBtn}
+                    >
 
                         Utarg
                 </NavLink>
