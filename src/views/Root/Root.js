@@ -35,12 +35,13 @@ class Root extends React.Component {
         <main className={styles.main}>
           <Switch>
             <Route
-              path="/cennik"
-              component={TariffView}
+              exact
+              path="/"
+              component={OrderView}
             />
             <Route
-              path="/zamowienia"
-              component={OrderView}
+              path="/cennik"
+              component={TariffView}
             />
           </Switch>
         </main>

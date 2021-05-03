@@ -20,6 +20,18 @@ const Nav = ({ isActive, clickBtn }) => (
                     <NavLink
                         className={styles.list__link}
                         activeClassName={styles.list__linkActive}
+                        to="/"
+                        onClick={clickBtn}
+                        exact
+                    >
+
+                        Zamówienia
+                </NavLink>
+                </li>
+                <li className={styles.list__item}>
+                    <NavLink
+                        className={styles.list__link}
+                        activeClassName={styles.list__linkActive}
                         to="/opisy"
                         onClick={clickBtn}
                     >
@@ -34,17 +46,6 @@ const Nav = ({ isActive, clickBtn }) => (
                         onClick={clickBtn}
                     >
                         Cennik
-                </NavLink>
-                </li>
-                <li className={styles.list__item}>
-                    <NavLink
-                        className={styles.list__link}
-                        activeClassName={styles.list__linkActive}
-                        to="/zamowienia"
-                        onClick={clickBtn}
-                    >
-
-                        Zamówienia
                 </NavLink>
                 </li>
                 <li className={styles.list__item}>
