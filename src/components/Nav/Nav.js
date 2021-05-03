@@ -5,11 +5,11 @@ import styles from './Nav.module.scss';
 const Nav = ({ isActive, clickBtn }) => (
 
     <>
-        <button onClick={clickBtn} className={styles.burger}>
+        <button onClick={clickBtn} className={isActive ? styles.burgerActive : styles.burger}>
 
-            <span className={styles.burger__spanFirst}></span>
-            <span className={styles.burger__spanSecond}></span>
-            <span className={styles.burger__spanThird}></span>
+            <span className={isActive ? styles.burger__spanFirstActive : styles.burger__spanFirst}></span>
+            <span className={isActive ? styles.burger__spanSecondActive : styles.burger__spanSecond}></span>
+            <span className={isActive ? styles.burger__spanThirdActive : styles.burger__spanThird}></span>
 
         </button>
 
