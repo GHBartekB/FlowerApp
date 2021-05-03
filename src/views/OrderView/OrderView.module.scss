@@ -19,6 +19,11 @@
     }
 }
 
+.itemActive {
+    @extend .item;
+    background-color: #aaa;
+}
+
 
 .btnAdd {
     width: 40px;

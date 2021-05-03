@@ -92,6 +92,7 @@ class OrderView extends React.Component {
             }))
     }
 
+
     handleSubstractBtn = (price, stateName) => {
         const productPrice = parseInt(price);
 
@@ -111,7 +112,7 @@ class OrderView extends React.Component {
 
             return (
 
-                <div key={product.id} className={styles.item}>
+                <div key={product.id} className={this.state[product.stateName] > 0 ? styles.itemActive : styles.item}>
                     <span className={styles.item__name}>{product.name}</span>
                     <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btnMin}>-</button>
                     <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btnAdd}>+</button>
