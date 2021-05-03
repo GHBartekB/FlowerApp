@@ -9,13 +9,29 @@ import OrderView from '../OrderView/OrderView.js';
 
 class Root extends React.Component {
 
-  state = {}
+  state = {
+    isNavBtnActive: false,
+  }
+
+  handleNavBtnChange = () => {
+
+    if (!this.state.isNavBtnActive) {
+      this.setState({
+        isNavBtnActive: true,
+      })
+    } else
+      this.setState({
+        isNavBtnActive: false,
+      })
+  }
 
   render() {
 
+    const { isNavBtnActive } = this.state;
+
     return (
       <Router>
-        <Nav />
+        <Nav isActive={isNavBtnActive} clickBtn={this.handleNavBtnChange} />
         <main className={styles.main}>
           <Switch>
             <Route

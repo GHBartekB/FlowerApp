@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.scss';
 
-const Nav = () => (
+const Nav = ({ isActive, clickBtn }) => (
 
     <>
-        <button className={styles.burger}>
+        <button onClick={clickBtn} className={styles.burger}>
 
             <span className={styles.burger__spanFirst}></span>
             <span className={styles.burger__spanSecond}></span>
@@ -13,7 +13,7 @@ const Nav = () => (
 
         </button>
 
-        <nav className={styles.nav}>
+        <nav className={isActive ? styles.navActive : styles.nav}>
 
             <ul className={styles.list}>
                 <li className={styles.list__item}>
