@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './OrderView.module.scss';
 import { FlowerList } from '../../data/FlowerList.js';
+import OrderModal from '../../components/OrderModal/OrderModal.js';
 
 class OrderView extends React.Component {
 
     state = {
+        isModalOpen: false,
         sum: 0,
         aks: 0,
         amp: 0,
@@ -34,31 +36,15 @@ class OrderView extends React.Component {
         wil: 0,
     }
 
-    handleAddBtn = (price, stateName) => {
-        const productPrice = parseInt(price);
-        this.setState(prevState => (
-            {
-                sum: prevState.sum + productPrice,
-                [stateName]: prevState[stateName] + 1,
-
-            }))
-    }
-
-    handleSubstractBtn = (price, stateName) => {
-        const productPrice = parseInt(price);
-
-        if (this.state[stateName] > 0) {
-
-            this.setState(prevState => ({
-                sum: prevState.sum - productPrice,
-                [stateName]: prevState[stateName] - 1,
-            }))
-        }
-
-    }
-
-    handleResetbtn = () => {
+    handleModalOpen = () => {
         this.setState({
+            isModalOpen: true,
+        })
+    }
+
+    handleModalClose = () => {
+        this.setState({
+            isModalOpen: false,
             sum: 0,
             aks: 0,
             amp: 0,
@@ -86,8 +72,35 @@ class OrderView extends React.Component {
             sun: 0,
             sur: 0,
             wil: 0,
+
         })
     }
+
+    handleAddBtn = (price, stateName) => {
+        const productPrice = parseInt(price);
+        this.setState(prevState => (
+            {
+                sum: prevState.sum + productPrice,
+                [stateName]: prevState[stateName] + 1,
+
+            }))
+    }
+
+    handleSubstractBtn = (price, stateName) => {
+        const productPrice = parseInt(price);
+
+        if (this.state[stateName] > 0) {
+
+            this.setState(prevState => ({
+                sum: prevState.sum - productPrice,
+                [stateName]: prevState[stateName] - 1,
+            }))
+        }
+
+    }
+
+
+
 
     render() {
 
@@ -104,14 +117,14 @@ class OrderView extends React.Component {
             )
         })
 
+        const { isModalOpen, sum } = this.state;
+
         return (
             <>
-                <div>
-                    <h2>Do zapłaty: {this.state.sum} zł</h2>
-                </div>
                 { productList}
+                <OrderModal isModalActive={isModalOpen} summary={sum} closeModal={this.handleModalClose} />
 
-                <button className={styles.btnRes} onClick={() => this.handleResetbtn()}>Resetuj stan</button>
+                <button className={styles.btnRes} onClick={() => this.handleModalOpen()}>rachunek</button>
             </>
         )
     }
