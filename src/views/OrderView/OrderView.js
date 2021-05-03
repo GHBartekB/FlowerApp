@@ -45,6 +45,12 @@ class OrderView extends React.Component {
     handleModalClose = () => {
         this.setState({
             isModalOpen: false,
+        })
+    }
+    handleCloseDeal = () => {
+
+        this.setState({
+            isModalOpen: false,
             sum: 0,
             aks: 0,
             amp: 0,
@@ -72,9 +78,9 @@ class OrderView extends React.Component {
             sun: 0,
             sur: 0,
             wil: 0,
-
         })
     }
+
 
     handleAddBtn = (price, stateName) => {
         const productPrice = parseInt(price);
@@ -99,9 +105,6 @@ class OrderView extends React.Component {
 
     }
 
-
-
-
     render() {
 
         const productList = FlowerList.map((product) => {
@@ -122,8 +125,7 @@ class OrderView extends React.Component {
         return (
             <>
                 { productList}
-                <OrderModal isModalActive={isModalOpen} summary={sum} closeModal={this.handleModalClose} />
-
+                <OrderModal isModalActive={isModalOpen} summary={sum} closeModal={this.handleModalClose} closeDeal={this.handleCloseDeal} />
                 <button className={styles.btnRes} onClick={() => this.handleModalOpen()}>rachunek</button>
             </>
         )
