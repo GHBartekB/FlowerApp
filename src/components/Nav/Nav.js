@@ -23,8 +23,6 @@ const Nav = ({ isActive, clickBtn }) => (
                         to="/opisy"
                         onClick={clickBtn}
                     >
-
-
                         Opisy
                 </NavLink>
                 </li>
@@ -35,7 +33,6 @@ const Nav = ({ isActive, clickBtn }) => (
                         to="/cennik"
                         onClick={clickBtn}
                     >
-
                         Cennik
                 </NavLink>
                 </li>
@@ -57,7 +54,6 @@ const Nav = ({ isActive, clickBtn }) => (
                         to="/utarg"
                         onClick={clickBtn}
                     >
-
                         Utarg
                 </NavLink>
                 </li>

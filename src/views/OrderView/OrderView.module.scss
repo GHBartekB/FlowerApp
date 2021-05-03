@@ -1,18 +1,48 @@
 .item {
     display: flex;
     flex-wrap: nowrap;
-    // border: 2px solid red;
     font-size: 22px;
     height: 80px;
+    width: 100%;
     align-items: center;
+    justify-content: space-around;
     padding: 0 10px;
     margin-bottom: 10px;
+
+    &__name {
+        flex-basis: 30%;
+    }
+
+    &__count {
+        flex-basis: 15%;
+    }
 }
 
 
-.btn {
+.btnAdd {
     width: 40px;
     height: 40px;
-    margin: 0 40px 0 10px;
     font-size: 22px;
+    color: white;
+    font-weight: bold;
+    background-color: #2cb978;
+    border: none;
+}
+
+.btnMin {
+    @extend .btnAdd;
+    background-color: #582233;
+}
+
+.btnRes {
+    margin-top: 50px;
+    width: 220px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
 }

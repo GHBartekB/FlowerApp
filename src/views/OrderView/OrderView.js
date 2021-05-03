@@ -91,10 +91,10 @@ class OrderView extends React.Component {
             return (
 
                 <div key={product.id} className={styles.item}>
-                    <span>{product.name}</span>
-                    <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btn}>-</button>
-                    <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btn}>+</button>
-                    <span>{this.state[product.stateName]} szt.</span>
+                    <span className={styles.item__name}>{product.name}</span>
+                    <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btnMin}>-</button>
+                    <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btnAdd}>+</button>
+                    <span className={styles.item__count} >{this.state[product.stateName]} szt.</span>
                 </div>
             )
         })
@@ -106,7 +106,7 @@ class OrderView extends React.Component {
                 </div>
                 {productList}
 
-                <button onClick={() => this.handleResetbtn()}>Resetuj stan</button>
+                <button className={styles.btnRes} onClick={() => this.handleResetbtn()}>Resetuj stan</button>
             </>
         )
     }
