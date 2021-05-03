@@ -37,8 +37,8 @@ export const FlowerList = [
     },
     {
         id: 6,
-        name: 'begSta',
-        stateName: 'begoniaStandard',
+        name: 'begonia standard',
+        stateName: 'begSta',
         price: 6,
 
     },
