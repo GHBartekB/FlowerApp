@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Root.module.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import { FlowerList } from '../../data/FlowerList.js';
 import Nav from '../../components/Nav/Nav.js';
 import TariffView from '../TariffView/TariffView.js';
 import OrderView from '../OrderView/OrderView.js';
@@ -30,7 +29,7 @@ class Root extends React.Component {
     const { isNavBtnActive } = this.state;
 
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Nav isActive={isNavBtnActive} clickBtn={this.handleNavBtnChange} />
         <main className={styles.main}>
           <Switch>
