@@ -126,7 +126,7 @@ export const FlowerList = [
     },
     {
         id: 19,
-        name: 'milion dzwoneczków',
+        name: 'milion dzwonków',
         stateName: 'mil',
         price: 5,
 

@@ -2,12 +2,12 @@
     display: flex;
     flex-wrap: nowrap;
     font-size: 22px;
-    height: 80px;
+    height: 100px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     padding: 0 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 
 
     &__name {
@@ -17,6 +17,16 @@
     &__count {
         flex-basis: 15%;
     }
+
+    &__btns {
+        flex-basis: 45%;
+        flex-wrap: wrap;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
 }
 
 .itemActive {
@@ -26,6 +36,7 @@
 
 
 .btnAdd {
+    flex-basis: 40%;
     width: 40px;
     height: 40px;
     font-size: 22px;

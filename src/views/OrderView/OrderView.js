@@ -92,6 +92,16 @@ class OrderView extends React.Component {
             }))
     }
 
+    handleAddBtnTen = (price, stateName) => {
+        const productPrice = parseInt(price);
+        this.setState(prevState => (
+            {
+                sum: prevState.sum + productPrice,
+                [stateName]: prevState[stateName] + 10,
+
+            }))
+    }
+
 
     handleSubstractBtn = (price, stateName) => {
         const productPrice = parseInt(price);
@@ -105,6 +115,18 @@ class OrderView extends React.Component {
         }
 
     }
+    handleSubstractBtnTen = (price, stateName) => {
+        const productPrice = parseInt(price);
+
+        if (this.state[stateName] > 9) {
+
+            this.setState(prevState => ({
+                sum: prevState.sum - productPrice,
+                [stateName]: prevState[stateName] - 10,
+            }))
+        }
+
+    }
 
     render() {
 
@@ -114,8 +136,12 @@ class OrderView extends React.Component {
 
                 <div key={product.id} className={this.state[product.stateName] > 0 ? styles.itemActive : styles.item}>
                     <span className={styles.item__name}>{product.name}</span>
-                    <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btnMin}>-</button>
-                    <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btnAdd}>+</button>
+                    <div className={styles.item__btns}>
+                        <button name={product.name} onClick={() => this.handleSubstractBtn(product.price, product.stateName)} className={styles.btnMin}>-</button>
+                        <button name={product.name} onClick={() => this.handleAddBtn(product.price, product.stateName)} className={styles.btnAdd}>+</button>
+                        <button onClick={() => this.handleSubstractBtnTen(product.price, product.stateName)} className={styles.btnMin}>- 10</button>
+                        <button onClick={() => this.handleAddBtnTen(product.price, product.stateName)} className={styles.btnAdd}>+ 10</button>
+                    </div>
                     <span className={styles.item__count} >{this.state[product.stateName]} szt.</span>
                 </div >
             )
