@@ -94,9 +94,10 @@ class OrderView extends React.Component {
 
     handleAddBtnTen = (price, stateName) => {
         const productPrice = parseInt(price);
+        const substractPrice = productPrice * 10;
         this.setState(prevState => (
             {
-                sum: prevState.sum + productPrice,
+                sum: prevState.sum + substractPrice,
                 [stateName]: prevState[stateName] + 10,
 
             }))
@@ -117,11 +118,12 @@ class OrderView extends React.Component {
     }
     handleSubstractBtnTen = (price, stateName) => {
         const productPrice = parseInt(price);
+        const substractPrice = productPrice * 10;
 
         if (this.state[stateName] > 9) {
 
             this.setState(prevState => ({
-                sum: prevState.sum - productPrice,
+                sum: prevState.sum - substractPrice,
                 [stateName]: prevState[stateName] - 10,
             }))
         }
