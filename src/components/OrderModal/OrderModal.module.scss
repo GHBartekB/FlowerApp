@@ -36,11 +36,27 @@
         border: none;
         color: white;
         text-transform: uppercase;
-        background-color: red;
+        background-color: darkorange;
         letter-spacing: 2px;
         border-radius: 10px;
         width: 250px;
     }
+
+    &__resetBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        border-radius: 2px;
+        background-color: red;
+        text-transform: uppercase;
+        color: white;
+        width: 100px;
+        padding: 7px 12px;
+        font-size: 18px;
+        letter-spacing: 2px
+    }
+
 }
 
 .modalActive {
